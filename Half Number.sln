@@ -1,0 +1,17 @@
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1;
+    cout << "Enter Number : " << endl;
+    cin >> n1;
+    cout << "Half of The " << n1 << " is " << n1/2;
+
+
+
+    return 0;
+}
+
