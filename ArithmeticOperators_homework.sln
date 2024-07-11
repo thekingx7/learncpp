@@ -1,0 +1,23 @@
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    unsigned int n1;
+    unsigned int n2;
+    cout << "Enter First Number : " << endl;
+    cin >> n1;
+    cout << "Enter secend Number : " << endl;
+    cin >> n2;
+    cout << n1 << "+" << n2 << "=" << n1 + n2 << endl;
+    cout << n1 << "-" << n2 << "=" << n1 - n2 << endl;
+    cout << n1 << "*" << n2 << "=" << n1 * n2 << endl;
+    cout << n1 << "/" << n2 << "=" << n1 / n2 << endl;
+    cout << n1 << "%" << n2 << "=" << n1 % n2 << endl;
+
+
+    return 0;
+}
+
