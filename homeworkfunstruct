@@ -1,0 +1,55 @@
+
+
+#include <iostream>
+using namespace std;
+
+struct stinfo {
+    string name;
+    int age;
+    string city;
+    string contry;
+    int salarm;
+    bool gender;
+    bool married;
+};
+void readinfo(stinfo &info) {
+    cout << "Enter Your Name : " << endl;
+    cin >> info.name;
+    cout << "Enter Your Age : " << endl;
+    cin >> info.age;
+    cout << "Enter Your City : " << endl;
+    cin >> info.city;
+    cout << "Enter Your Country : " << endl;
+    cin >> info.contry;
+    cout << "Enter Your Salary : " << endl;
+    cin >> info.salarm;
+    cout << "What Your Gender ? " <<  endl;
+    cin >> info.gender;
+    cout << "Are You Married ? " << endl;
+    cin >> info.married;
+}
+void printinfo(stinfo info) {
+    cout << "\n ************************************\n";
+    cout << "Name : " << info.name << endl;
+    cout << "Age : " << info.age << endl;
+    cout << "City : " << info.city << endl;
+    cout << "country : " << info.contry << endl;
+    cout << "Your Salary in month : " << info.salarm << endl;
+    cout << "Your Salary in yaers : " << info.salarm * 12 << endl;
+    cout << "Your Gender its is : " << info.gender << endl;
+    cout << "Married > :" << info.married << endl;
+    cout << "\n ************************************\n";
+
+
+
+}
+int main()
+{
+    stinfo p1;
+    readinfo(p1);
+    printinfo(p1);
+
+
+    return 0;
+}
+
