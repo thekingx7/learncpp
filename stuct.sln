@@ -1,0 +1,47 @@
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+    enum encolor {
+        male,holy,soly,var
+    };
+    struct staddres {
+        string city;
+        string cont;
+        string zip;
+
+    };
+    struct stinfo {
+        string age;
+        int number;
+        string mariid;
+        int salary;
+        string gandr;
+        staddres addres;
+
+    };
+    struct stme {
+        string firstname;
+        string lastname;
+        stinfo info;
+    };
+int main()
+{
+
+    stme me1;
+    me1.info.addres.zip = "55421";
+    me1.info.gandr = encolor::holy;
+    cout << me1.info.gandr << endl << "" << me1.info.addres.zip << endl;
+    cout << "hello";
+
+
+    
+    
+    
+
+
+
+    return 0;
+}
+
