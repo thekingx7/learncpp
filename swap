@@ -1,0 +1,30 @@
+
+
+#include <iostream>
+using namespace std;
+
+void swap(int &num, int &num2) {
+    int tem = num;//10
+    num = num2;//20
+    num2 = tem;
+    cout <<num <<endl<<num2 <<endl;
+}
+
+int main()
+{
+    int x;
+    int y;
+
+    cout << "num1" << endl;
+    cin >> x;
+    cout << "num 2 : " << endl;
+    cin >> y;
+    cout << "one "<<x << endl <<"tow "<< y << endl;
+    swap(x,y);
+    cout << "one " << x << endl << "tow " << y << endl;
+
+
+
+    return 0;
+}
+
