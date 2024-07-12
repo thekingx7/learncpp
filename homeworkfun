@@ -1,0 +1,32 @@
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+void displaymycardinfo() {
+    cout << "*******************" << endl;
+    cout << "Name : Abdullah" << endl;
+    cout << "Age : 30 " << endl;
+    cout << "Contry : ksa " << endl;
+    cout << "*******************" << endl;
+}
+void printscorl() {
+    cout << "*******************" << endl;
+    cout << "*******************" << endl;
+    cout << "*******************" << endl;
+    cout << "*******************" << endl;
+}
+void printlove() {
+    cout << "I Love Programming" << endl;
+    cout << "I love my City so much" << endl;
+    cout << "i love makeing Code " << endl;
+}
+int main()
+{
+    displaymycardinfo();
+    printscorl();
+    printlove();
+
+    return 0;
+}
+
