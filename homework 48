@@ -1,0 +1,46 @@
+
+
+#include <iostream>
+using namespace std;
+void readnumber(int arry[100], int& leg) {
+    cout << "Enter How many Number from 1 to 100 ? " << endl;
+    cin >> leg;
+    for (int i = 0; i <= leg - 1; i++) {
+        cout << "Enter Number " << i + 1 << endl;
+        cin >> arry[i];
+    }
+
+}
+void printnumber(int arry[100], int& leg) {
+
+    for (int i = 0; i <= leg - 1; i++) {
+        cout << "this  " << "[" << i + 1 << "]" << arry[i] << endl;
+    }
+
+}
+int get(int arry[100], int leg)
+{
+    int sum = 0;
+    for (int i = 0; i <= leg - 1; i++) {
+        sum += arry[i];
+
+    }
+    return sum;
+}
+
+float howis(int arry[100], int leg) {
+
+    return (float)get(arry, leg) / leg;
+}
+int main()
+{
+    int arry[100], leg = 0;
+    readnumber(arry, leg);
+    printnumber(arry, leg);
+
+    cout << "this " << get(arry, leg) << endl;
+    cout << "/" << howis(arry, leg) << endl;
+
+    return 0;
+}
+
