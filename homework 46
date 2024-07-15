@@ -1,0 +1,61 @@
+
+
+#include <iostream>
+using namespace std;
+enum endays {sun=1,mon=2,tue=3,wed=4,thu=5,fri=6,sat=7};
+void weekdays() {
+    cout << "********************" << endl;
+    cout << "Week Day Menu" << endl;
+    cout << "********************" << endl;
+    cout << "(1) : sundayd" << endl;
+    cout << "(2) : monday" << endl;
+    cout << "(3) : tuheday" << endl;
+    cout << "(4) : wadensday" << endl;
+    cout << "(5) : thyrsday" << endl;
+    cout << "(6) : friday" << endl;
+    cout << "(7) : saturday" << endl;
+    cout << "********************" << endl;
+    cout << "Plaese select number of day " << endl;
+}
+endays readdayd() {
+    endays weekday;
+    int wd;
+    cin >> wd;
+    return (endays)wd;
+}
+string getweekdays(endays weekday) {
+    switch (weekday) {
+    case endays::sun:
+        return "sunday";
+        break;
+    case endays::mon:
+        return "monday";
+        break;
+    case endays::tue:
+        return "tuheday";
+        break;
+    case endays::wed:
+        return "wadensday";
+        break;
+    case endays::thu:
+        return "thyrsday";
+        break;
+    case endays::fri:
+        return "friday";
+        break;
+    case endays::sat:
+        return "saturday";
+        break;
+    default:
+        return "not have anythin";
+    }
+
+}
+int main()
+{
+    weekdays();
+    cout << "hello this day is " << getweekdays(readdayd()) << endl;
+
+    return 0;
+}
+
